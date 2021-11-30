@@ -12,3 +12,29 @@ const images = [
     alt: 'Group of Horses Running',
   },
 ];
+
+
+const makeOneElementOfGallary = ({url, alt}) => {
+  return `
+  <li>
+      <img src="${url}" alt="${alt}" width="100%" height="350px">
+  </li>
+  `
+};
+
+const gallaryEl = document.querySelector('.gallery');
+gallaryEl.style.display = 'flex';
+gallaryEl.style.justifyContent = 'space-between';
+gallaryEl.style.alignItems = 'center';
+
+
+
+
+const makeMarkupGallary = images.
+  map(makeOneElementOfGallary).
+  join('');
+
+gallaryEl.insertAdjacentHTML('afterbegin', makeMarkupGallary)
+
+
+
