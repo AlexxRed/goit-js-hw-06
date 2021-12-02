@@ -26,6 +26,10 @@ const gallaryEl = document.querySelector('.gallery');
 gallaryEl.style.display = 'flex';
 gallaryEl.style.justifyContent = 'space-between';
 gallaryEl.style.alignItems = 'center';
+gallaryEl.style.backgroundColor = 'pink';
+gallaryEl.style.paddingTop = '5px';
+
+
 
 
 
