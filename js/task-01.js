@@ -18,9 +18,17 @@ for (let i = 0; i < itemsEl.length; i += 1){
 // Другой вариант
 
 // itemsEl.forEach(element => {
+//     console.log(`Category: ${element.firstElementChild.innerHTML}`);
+//     console.log(`Elements: ${element.lastElementChild.children.length}`);
+// });
+
+// Третий вариант
+
+// itemsEl.forEach(element => {
 //     const title = element.querySelector('h2');
 //     const liElement = element.querySelectorAll('li');
 
 //     console.log(`Category: ${title.innerHTML}`);
 //     console.log(`Elements: ${liElement.length}`);
 // })
+
