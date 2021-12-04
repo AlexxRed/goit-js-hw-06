@@ -9,8 +9,12 @@ const onFormSubmit = (event) =>{
 
     const email = event.currentTarget.elements.email.value;
     const password = event.currentTarget.elements.password.value;
+    // one of options
+    // if (email === '' || password === '') {
+    //     alert('All fields must be filled');
+    // }
 
-    if (email === '' || password === '') {
+    if (!email || !password) {
         alert('All fields must be filled');
     }
     else {
