@@ -14,3 +14,13 @@ for (let i = 0; i < itemsEl.length; i += 1){
     console.log(`Elements: ${itemsEl[i].children[1].children.length}`);
     
 };
+
+// Другой вариант
+
+// itemsEl.forEach(element => {
+//     const title = element.querySelector('h2');
+//     const liElement = element.querySelectorAll('li');
+
+//     console.log(`Category: ${title.innerHTML}`);
+//     console.log(`Elements: ${liElement.length}`);
+// })
