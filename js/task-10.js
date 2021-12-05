@@ -10,7 +10,8 @@ const refs = {
   buttonDestroy: document.querySelector('[data-destroy]'),
 };
 
-refs.input.addEventListener('input', createBoxes)
+refs.input.addEventListener('input', );
+refs.buttonCreate.addEventListener('click', createBoxes)
 
 
 const arrNumbersOfDiv = Array.from({length: 50 }).fill(1))
