@@ -29,7 +29,7 @@ const createBoxes = (amount) => {
 
   const onAddBoxes = () => {
     const fullmarkUp = markUp.join('');
-    refs.boxes.innerHTML = fullmarkUp
+    refs.boxes.innerHTML = fullmarkUp;
   };
 
   const onDestroyBoxes = () => {
