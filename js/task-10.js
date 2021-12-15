@@ -11,6 +11,7 @@ const refs = {
 
 const createBoxes = (amount) => {
   const inputValue = amount.target.value;
+  console.log(amount.target.value);
 
   const arrNumbersOfDiv = Array.from({ length: inputValue }).fill('<div></div>');
   // const markUp= [];
@@ -30,6 +31,7 @@ const createBoxes = (amount) => {
   const onAddBoxes = () => {
     const fullmarkUp = markUp.join('');
     refs.boxes.innerHTML = fullmarkUp;
+    amount.target.value = ''
   };
 
   const onDestroyBoxes = () => {
